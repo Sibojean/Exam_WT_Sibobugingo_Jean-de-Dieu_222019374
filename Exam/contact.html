@@ -1,0 +1,158 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: blue;
+    }
+      header {
+  background-color: yellow; /* Background color of the header */
+  color: orange; /* Text color */
+  padding: 20px; /* Padding around the header content */
+  text-decoration: underline; /* Center-align the header content */
+}
+
+/* Style for the logo */
+header img.logo {
+  width: px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+    }
+    .search-form {
+      position: fixed;
+      top: 50px;
+      left: 30px;
+      z-index: 999; /* Ensure search bar appears above other content */
+    }
+
+    header h1 {
+      margin: 17;
+      font-size: 90px;
+    }
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    section {
+      padding: 100px;
+      background-color: red;
+      margin: 20px;
+      border-radius: 15px;
+      
+}
+    footer {
+      text-align: center;
+      padding: 80px;
+      background-color: green;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    }
+  </style>
+  <!-- JavaScript function for insert confirmation -->
+  <script>
+    function confirmInsert() {
+      return confirm("Are you sure you want to insert this record?");
+    }
+  </script>
+</head>
+
+<body style="background-color: none;"> <!-- Corrected placement of body tag -->
+  <header>
+    <ul style="list-style-type: none; padding: 0;"> <!-- No list-style -->
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./ourservice.html">OUR SERVICE</a>
+         
+      <center>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">VIEW TABLES</a>
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="./therapists.php">THERAPISTS</a> 
+          <a href="./sessions.php">SESSION</a>
+          <a href="./payments.php">PAYMENT</a>
+          <a href="./files.php">FILES</a>
+          <a href="./client.php"> CLIENTS</a>
+          <a href="./chathistory.php">CHART HISTORY</a>
+          <a href="./assessmentforms.php">ASSESSMENT</a>
+          <a href="./appointments.php">APPOINTMENT</a>
+          <a href="./activities.php">ACTIVITIES</a>
+        </div>
+      </li>
+    </ul>
+  </center>
+    <!-- LOG OUT button -->
+    <a class="logout" href="logout.php" style="padding: 10px; color: white; background-color: red; text-decoration: none;">LOG OUT</a>
+  </header>
+
+  <!-- Your body content here -->
+
+  <section>
+    <h2><bold><u>OUR CONTACT US</u></bold></h2>
+    <ul>
+      <li>Address: 105 kigali, huye, city</li>
+      <li>Phone: +250 781939656</li>
+      <li>Email: sibojeandedieu10@gmail.com</li>
+    </ul>
+
+    <form action="submit_contact" method="POST">
+      <label for="name">Names:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Telephone:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="send">
+    </form>
+
+    <p>Connect with us on social media or social networking:</p>
+    <p>
+      <a href="https://www.twitter.com/stockmgt">Twitter</a>
+      <a href="https://www.facebook.com/stockmgt">Facebook</a>
+      <a href="https://www.instagram.com/stockmgt">Instagram</a>
+      <a href="https://www.linkedin.com/stockmgt">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <!-- Footer content here -->
+    <marquee><i style="color: red;">&copy; 2024</i><b>WEB TECHNOLOGY CAT</b></marquee>
+  </footer>
+</body>
+</html>

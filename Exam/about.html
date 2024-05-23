@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: none;
+    }
+
+    header {
+      background-color: yellow; 
+      color: orange; 
+      padding: 20px; 
+      text-decoration: underline;
+    }
+
+    header img.logo {
+      width: auto; 
+      height: auto; 
+    }
+
+    .search-form {
+      position: fixed;
+      top: 50px;
+      left: 30px;
+      z-index: 999; 
+    }
+
+    header h1 {
+      margin: 17px;
+      font-size: 90px;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    section {
+      padding: 20px;
+      background-color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: green;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h3 {
+      color: blue;
+    }
+  </style>
+  <script>
+    function confirmInsert() {
+      return confirm("Are you sure you want to insert this record?");
+    }
+  </script>
+</head>
+
+<body style="background-image: url('./image/download4.jpeg');">
+
+  <header>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./ourservice.html">OUR SERVICE</a>
+      </li>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">VIEW TABLES</a>
+        <div class="dropdown-contents">
+          <a href="./therapists.php">THERAPISTS</a>
+          <a href="./sessions.php">SESSION</a>
+          <a href="./payments.php">PAYMENT</a>
+          <a href="./files.php">FILES</a>
+          <a href="./client.php">CLIENTS</a>
+          <a href="./chathistory.php">CHART HISTORY</a>
+          <a href="./assessmentforms.php">ASSESSMENT</a>
+          <a href="./appointments.php">APPOINTMENT</a>
+          <a href="./activities.php">ACTIVITIES</a>
+        </div>
+      </li>
+    </ul>
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </header>
+
+  <section id="about">
+    <h3><p><b>Video Conferencing:</b></h3> The core feature of a virtual occupational therapy platform is video conferencing capabilities. It allows therapists and clients to see and hear each other in real-time, facilitating face-to-face communication despite being in different locations.</p>
+
+    <h3><p><b>Secure Communication:</b></h3> Since therapy sessions involve sensitive personal information, the platform should prioritize security and privacy. End-to-end encryption and secure data storage are essential to protect client confidentiality.</p>
+
+    <h3><p><b>Scheduling and Appointment Management:</b></h3> The platform may include features for scheduling appointments, sending reminders, and managing calendars. This helps therapists and clients coordinate session times and ensures that appointments are not missed.</p>
+
+    <h3><p><b>Document Sharing and Collaboration:</b></h3> Therapists may need to share resources, exercises, or educational materials with clients during sessions. The platform could include features for uploading and sharing documents, videos, or interactive tools to support therapy goals.</p>
+
+    <h3><p><b>Interactive Tools and Activities:</b></h3> Interactive tools and activities can enhance engagement and facilitate therapy goals. These may include virtual whiteboards, interactive games, digital exercises, and cognitive training programs tailored to specific client needs.</p>
+
+    <h3><p><b>Progress Tracking and Reporting:</b></h3> The platform may offer tools for tracking client progress, setting goals, and generating progress reports. Therapists can monitor client outcomes over time and adjust treatment plans accordingly.</p>
+  </section>
+
+  <footer>
+    <center><i style="color: white;">&copy; 2024 WEB TECHNOLOGY EXAMINATION 222019374</i></center>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUR SERVICE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: none;
+    }
+    header {
+      background-color: yellow;
+      color: orange;
+      padding: 20px;
+      text-decoration: underline;
+    }
+
+    header img.logo {
+      width: px;
+      height: auto;
+    }
+
+    .search-form {
+      position: fixed;
+      top: 50px;
+      left: 30px;
+      z-index: 999;
+    }
+
+    header h1 {
+      margin: 17;
+      font-size: 90px;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    section {
+      padding: 100px;
+      background-color: orange;
+      margin: 10px;
+      border-radius: 100px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px;
+      background-color: green;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    }
+  </style>
+  <!-- JavaScript function for insert confirmation -->
+  <script>
+    function confirmInsert() {
+      return confirm("Are you sure you want to insert this record?");
+    }
+  </script>
+</head>
+
+<body style="background-image: url('./image/download.jpeg');">
+  <header>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+      <li style="display: inline; margin-right: 80px;">
+        <a href="./ourservice.html">OUR SERVICE</a>
+      </li>
+      <center>
+        <li class="dropdown" style="display: inline; margin-right: 10px;">
+          <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">VIEW TABLES</a>
+          <div class="dropdown-contents">
+            <a href="./therapists.php">THERAPISTS</a>
+            <a href="./sessions.php">SESSION</a>
+            <a href="./payments.php">PAYMENT</a>
+            <a href="./files.php">FILES</a>
+            <a href="./client.php">CLIENTS</a>
+            <a href="./chathistory.php">CHART HISTORY</a>
+            <a href="./assessmentforms.php">ASSESSMENT</a>
+            <a href="./appointments.php">APPOINTMENT</a>
+            <a href="./activities.php">ACTIVITIES</a>
+          </div>
+        </li>
+      </center>
+    </ul>
+    <div class="search-form">
+      <form role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="search..." aria-label="search" name="query">
+        <button class="btn" type="submit">search</button>
+      </form>
+    </div>
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </header>
+  
+  <section id="ourservice" style="display: block;">
+    <h1 style="color: white;">OUR SERVICES</h1>
+    <p style="color: white;">Our platform offers a comprehensive range of virtual occupational therapy services designed to meet the needs of various individuals. Here are some of the key services we provide:</p>
+    <ul style="color: white;">
+      <li><strong>Teletherapy Sessions:</strong> We offer individual and group therapy sessions conducted via secure video conferencing platforms, allowing clients to receive tailored interventions from the comfort of their own homes.</li>
+      <li><strong>Assessments and Evaluations:</strong> Our therapists conduct comprehensive assessments to understand clients' needs and create personalized treatment plans. These assessments are crucial for setting goals and tracking progress.</li>
+      <li><strong>Home Programs and Activities:</strong> Customized home programs are provided to reinforce the skills worked on during therapy sessions. These programs include exercises, activities, and educational resources accessible online.</li>
+      <li><strong>Educational Resources and Support:</strong> We offer resources and training for parents and educators to help them support the client’s progress. This includes webinars, instructional videos, and written guides.</li>
+      <li><strong>Professional Development for Therapists:</strong> Our platform offers professional development programs for therapists, helping them stay updated with the latest practices and improve their teletherapy skills.</li>
+      <li><strong>Technology and Tools Integration:</strong> We integrate electronic medical records (EMR), practice management tools, and telehealth features to ensure a seamless experience for both therapists and clients. These tools include appointment scheduling, session notes, and billing systems.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <center> <i style="color: white;">&copy; 2024 WEB TECHNOLOGY CAT 222019374</i></center>
+  </footer>
+</body>
+</html>
